@@ -1,4 +1,4 @@
-# provider_example
+# For Info Inlet Company
 
 A new Flutter project.
 
