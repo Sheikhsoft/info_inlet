@@ -22,7 +22,7 @@ class ProductListScreen extends StatelessWidget {
         actions: [
           Badge(
             showBadge: store.getCartQuantity() > 0,
-            position: BadgePosition(top: 0, right: 2),
+            position: BadgePosition(top: 0, end: 2),
             animationType: BadgeAnimationType.scale,
             badgeContent: Text(
               store.getCartQuantity().toString(),

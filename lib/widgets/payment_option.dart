@@ -6,8 +6,6 @@ import 'package:provider_example/store/store.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class PaymentOption extends StatefulWidget {
-  const PaymentOption({Key key}) : super(key: key);
-
   @override
   _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
 }
@@ -299,7 +297,7 @@ class _MyStatefulWidgetState extends State<PaymentOption> {
                   width: 20,
                   height: 20,
                   child: Radio(
-                    onChanged: (t) => {},
+                    onChanged: null,
                     activeColor: isExpanded ? iPrimaryColor : Colors.grey,
                     groupValue: null,
                     value: null,
@@ -320,9 +318,9 @@ enum PaymentType { stripe, paypal, tutorialandexample }
 
 class Item {
   Item({
-    this.id,
-    this.expandedWidget,
-    this.headerValue,
+    required this.id,
+    required this.expandedWidget,
+    required this.headerValue,
   });
 
   int id;

@@ -81,7 +81,7 @@ class _PaymentMethodViewState extends State<PaymentMethodView> {
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  onPressed: () => _showMyDialog(context, model.cartTotal),
+                  onPressed: () => _showMyDialog(context, model.getTotal()),
                   style: ElevatedButton.styleFrom(
                     primary: iPrimaryColor,
                     onPrimary: Colors.white,

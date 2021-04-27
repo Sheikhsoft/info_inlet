@@ -99,7 +99,6 @@ class CartScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-
                           Container(
                             margin: EdgeInsets.symmetric(horizontal: 5),
                             width: 40,
@@ -122,7 +121,6 @@ class CartScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-
                           InkWell(
                             onTap: () => store.addItemToCart(item),
                             child: Container(
@@ -143,8 +141,6 @@ class CartScreen extends StatelessWidget {
                               ),
                             ),
                           )
-
-                        
                         ],
                       ))
                     ],
@@ -241,7 +237,7 @@ class CartScreen extends StatelessWidget {
                                 fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "\$ ${store.getTotal(10).toStringAsFixed(2)}",
+                            "\$ ${store.getTotal().toStringAsFixed(2)}",
                             style: TextStyle(fontSize: 18),
                           ),
                         ],

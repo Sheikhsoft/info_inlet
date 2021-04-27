@@ -22,7 +22,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
   bool _cityHasError = false;
   bool _addressHasError = false;
   bool _nidHasError = false;
-
+  bool _ageHasError = false;
   final ValueChanged _onChanged = (val) => print(val);
   var genderOptions = ['Male', 'Female', 'Other'];
   var countryOptions = ['Bangladesh', 'India', 'Pakistan', 'USA'];
@@ -69,7 +69,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
                       height: 10,
                     ),
                     FormBuilderTextField(
-                      autovalidateMode: AutovalidateMode.disabled,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
                       name: 'name',
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -135,7 +135,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
                       height: 10,
                     ),
                     FormBuilderTextField(
-                      autovalidateMode: AutovalidateMode.disabled,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
                       name: 'phone',
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -168,7 +168,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
                       height: 10,
                     ),
                     FormBuilderTextField(
-                      autovalidateMode: AutovalidateMode.disabled,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
                       name: 'email',
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -284,7 +284,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
                     ),
                     FormBuilderTextField(
                       maxLines: 2,
-                      autovalidateMode: AutovalidateMode.disabled,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
                       name: 'address',
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -317,7 +317,7 @@ class _PersonalInfoViewState extends State<PersonalInfoView> {
                       height: 10,
                     ),
                     FormBuilderTextField(
-                      autovalidateMode: AutovalidateMode.disabled,
+                      autovalidateMode: AutovalidateMode.onUserInteraction,
                       name: 'nid',
                       decoration: InputDecoration(
                         border: OutlineInputBorder(

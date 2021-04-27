@@ -6,7 +6,7 @@ import 'package:provider_example/store/store.dart';
 
 class ProductListItem extends StatelessWidget {
   final Product product;
-  const ProductListItem({this.product});
+  const ProductListItem({required this.product});
 
   @override
   Widget build(BuildContext context) {
